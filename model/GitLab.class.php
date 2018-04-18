@@ -16,7 +16,7 @@ class GitLab{
     protected $_configFile;
     private $_lastUpdate;
 
-    public function __construct($projectNamespace, $projectPath, $authCode, $cathCommit, $branch = 'master', $configFile = 'gitlab.json'){
+    public function __construct($projectNamespace, $projectPath, $authCode, $cathCommit = true, $branch = 'master', $configFile = 'gitlab.json'){
         $this->_projectNamespace = $projectNamespace;
         $this->_projectPath = $projectPath;
         $this->_authCode = $authCode;
